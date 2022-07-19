@@ -10,7 +10,7 @@ body {
 }
 @media(max-width:676px) {
     body {
-        padding: 20px 20px;
+        padding: 20px;
     }
 }
 header {
@@ -44,6 +44,7 @@ font-size: 20px;
         margin-bottom: 20px;
         justify-content: center;
         align-items: center;
+        padding: 20px;
     }
 }
 .header .container .imge img{
@@ -90,5 +91,225 @@ width: fit-content;
         width: 100%;
         }
 }
+.container-2 {
+    background-color: #F7F7F7;
+    padding: 40px 100px;
+}
+@media(max-width:676px) {
+    .container-2 {
+        padding:20px;
+    }
+}
+.container-2 .text-area {
+margin: 0 auto;
+padding-top: 50px;
+width: 300px;
+text-align: center;
+}
+.container-2 .text-area h2{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.container-2 .text-area h2::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 60px;
+    background-color: black;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container-2 .icons {
+    margin: 30px auto;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-2 .icons div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container-2 .icons div:not(:last-child)::before{
+content: "";
+position: absolute;
+height: 1px;
+width: 51px;
+top:50%;
+right: -51px;
+background-color: black;
+}
+.container-2 .icons div i {
+    font-size: 1.5rem;
+}
+@media (max-width: 676px) {
+    .container-2 .icons div:not(:last-child)::before{
+        display: none;
+    }
+    .container-2 .icons {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 100px;
+    }
+    .container-2 .icons div {
+        width: 60px;
+        height: 60px;
+    }
+}
+.container-2 .parg {
+    margin: 20px 20px;
+}
+.container-2 .parg p {
+    text-align: center;
+    line-height: 1.6;
+}
+.container-2 .foot {
+    display: flex;
+    justify-content: center;
+}
+.sec-2 .container-2 {
+    background-color: white;
+}
+.container-2 .sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.container-2 .sec .text h2 {
+margin-top: 40px;
+margin-bottom: 20px;
+font-weight: normal;
+position: relative;
+}
+.container-2 .sec .text h2::before{
+content: "";
+position: absolute;
+width: 50px;
+height: 1px;
+top:-20px;
+left: 0;
+background-color: black;
+}
+.container-2 .sec .text p {
+    line-height: 1.6;
+    font-size: .9rem;
+    margin-bottom: 30px;
+}
+.container-2 .sec .text .foot {
+    justify-content: flex-start;
+}
+.container-2 .sec .imge img {
+max-width: 100%;
+height: 100%;
+border-radius: 8px;
+}
 
+.sec-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/imges/alex-radelich-XVUQfCkcaUg-unsplash.jpg);
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+.sec-3::before {
+content: "";
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #00000080;
+z-index: 1;
+}
+.sec-3 .container-2 {
+background-color: transparent;
+}
+.sec-3 .container-2 .text-area-2 {
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 300px;
+    text-align: center;
+    }
+    .sec-3 .container-2 .text-area-2 h2{
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+}
+.sec-3 .container-2 .text-area-2 h2::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 60px;
+    background-color: white;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sec-3 .repeat-sec-2 {
+margin: 20px auto;
+text-transform: uppercase;
+letter-spacing: 3px;
+border: 1px solid white;
+padding: 12px 17px;
+border-radius: 50px;
+font-size: 0.6rem;
+width: fit-content;
+color: white;
+}
 
+.social-icon {
+    display: flex;
+    gap: 10px;
+}
+.social-icon div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form .inpu {
+    display: flex;
+    justify-content: space-between;
+
+}
+form .inpu input {
+padding: 5px 10px;
+color: gray;
+border-radius: 5px;
+border: 1px solid gray;
+margin-bottom: 10px;
+overflow: hidden;
+}
+form textarea {
+    padding: 5px 10px;
+color: gray;
+border-radius: 5px;
+border: 1px solid gray;
+margin-bottom: 20px;
+margin-right: 10px;
+width: 100%;
+}
+form .foot {
+    display: flex;
+    justify-content: flex-start;
+}
